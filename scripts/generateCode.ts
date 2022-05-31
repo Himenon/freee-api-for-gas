@@ -8,8 +8,7 @@ import * as Templates from "@himenon/openapi-typescript-code-generator/templates
 
 const task = async (filename: string, outputFilename: string): Promise<void> => {
   const option: Option = {
-    convertOption: {
-    },
+    convertOption: {},
   };
   const codeGenerator = new CodeGenerator(filename, option);
   const code = codeGenerator.generateTypeDefinition([
